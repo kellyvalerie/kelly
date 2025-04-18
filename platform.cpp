@@ -97,7 +97,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
 		for (int i = 0; i < BUTTON_COUNT; i++) {
 			input.buttons[i].changed = false;
 		}
-
+		// read message only once makanya di PM_remove
 		while (PeekMessage(&message, window, 0, 0, PM_REMOVE)) {
 
 			switch (message.message) {
